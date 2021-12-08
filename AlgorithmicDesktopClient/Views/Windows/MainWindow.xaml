@@ -11,7 +11,20 @@
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <TextBox Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}"/>
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File"/>
+            <MenuItem Header="Help"/>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" >
+            <StatusBarItem>
+                <ProgressBar Value="10" Width="100" Height="10"/>
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl>
+            <TabItem Header="Tab 1"></TabItem>
+            <TabItem Header="Tab 2"></TabItem>
+        </TabControl>
+        
+    </DockPanel>
 </Window>

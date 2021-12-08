@@ -1,0 +1,29 @@
+﻿<Window x:Class="AlgorithmicDesktopClient.Views.Windows.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorithmicDesktopClient.Views.Windows"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="200" Width="600"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        Loaded="Window_Loaded">
+    <Grid Background="#CDF0EA">
+        <TextBlock FontSize="100" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Foreground="#606470" 
+                   Text="Algorithmic"/>
+        <Image x:Name="load" Source="/Resources/loading (1).png" 
+               Width="50" Height="50" 
+               HorizontalAlignment="Right" 
+               VerticalAlignment="Bottom"
+               RenderTransformOrigin=".5,.5"
+               >
+            <Image.RenderTransform>
+                <RotateTransform Angle="0"/>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>
